@@ -22,7 +22,7 @@
     "**/*.js",
     "**/*.jsx",
     "next-env.d.ts"
-  ],
+, "../../libs/ui/src/lib/header.tsx", "../../libs/ui/src/lib/nav.tsx"  ],
   "exclude": [
     "node_modules"
   ]

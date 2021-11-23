@@ -18,7 +18,6 @@ export function Teams(props: TeamsProps) {
   return (
     <StyledTeams>
       <Ui title="Buenas chavales estos son los teams" showTitle={true} />
-      <Link href="/about">About</Link>
       <TeamsList countryName={name.toString()}/>
     </StyledTeams>
   );

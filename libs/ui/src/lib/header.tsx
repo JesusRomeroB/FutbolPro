@@ -1,15 +1,11 @@
-import Link from 'next/Link';
 import styled from 'styled-components';
-import { Ui } from '@futbol-pro/ui';
-import  Paises  from '../app/pais/pais';
-import { Nav } from '@futbol-pro/ui';
 
 const StyledPage = styled.div`
   .page {
   }
 `;
 
-export function Index() {
+export function Header() {
   /*
    * Replace the elements below with your own.
    *
@@ -17,10 +13,9 @@ export function Index() {
    */
   return (
     <StyledPage>
-      <Ui title="Buenas chavales esto es una prueba" showTitle={true}/>
-      <Paises/>
+      <h1>This is a header</h1>
     </StyledPage>
   );
 }
 
-export default Index;
+export default Header;
