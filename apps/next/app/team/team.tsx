@@ -22,7 +22,7 @@ export function TeamsList(props: TeamList) {
         teams.map((team) => (
           <li key={team.team.id}>
             {team.team.id} - {team.team.name} -{' '}
-            <Link href='/about'>
+            <Link href={`/teams/${countryName}/players/${team.team.id}`}>
               <img src={team.team.logo}></img>
             </Link>
           </li>

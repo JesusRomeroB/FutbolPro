@@ -17,6 +17,12 @@ export interface Team{
   logo: string;
 }
 
+export interface Player{
+  id: string;
+  name: string;
+  photo: string;
+}
+
 export interface Teams{
   team: {
     [key: string]: Team;
@@ -25,4 +31,8 @@ export interface Teams{
 
 export interface TeamList{
   countryName: string;
+}
+
+export interface PlayerList{
+  teamId: string;
 }

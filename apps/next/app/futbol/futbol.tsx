@@ -1,25 +1,27 @@
 import styled from 'styled-components';
-import {useFutbol} from "../useFutbol";
-const APIKey = "kE8eu5JQfIptrIHjoUk3OXdh2vkkGbku1ZdTjymuSEr63YNDyukaVxK1wkXW";
+import { useFutbol } from '../useFutbol';
+import { PlayerList } from '@futbol-pro/types';
 /* eslint-disable-next-line */
- export interface FutbolProps {}
 
 const StyledFutbol = styled.div`
   color: pink;
 `;
 
-export function Futbol(props: FutbolProps ) {
-  const  players:any[]  = useFutbol(APIKey);
+export function Futbol(props: PlayerList) {
+  const { teamId } = props;
+  const players: any[] = useFutbol(teamId);
   return (
     <StyledFutbol>
-      <h1>Lista de jugadores de Colombia</h1>
-      {
-        players && players.length > 0
-        ?
-          players.map( (player) => <li key={player.player_id}>{player.display_name}</li>)
-        :
-          <p>no data</p>
-      }
+      {players && players.length > 0 ? (
+        players.map((player) => (
+          <li key={player.player.id}>
+            {player.player.name}
+            <img src={player.player.photo}></img>
+          </li>
+        ))
+      ) : (
+        <p>no data</p>
+      )}
     </StyledFutbol>
   );
 }
