@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { useEffect, useState } from 'react';
 import { useTeams } from '../useTeams';
-import { Team } from '@futbol-pro/types';
+import { Team, Teams } from '@futbol-pro/types';
 import { TeamList } from '@futbol-pro/types';
 import Link from 'next/Link';
 
@@ -13,18 +14,16 @@ const StyledPais = styled.div`
 `;
 
 export function TeamsList(props: TeamList) {
-  const { CountryId } = props;
-  const teams: any[] = useTeams(APIKey, CountryId);
-
+  const { countryName } = props;
+  const teams: any[] = useTeams(countryName);
   return (
     <StyledPais>
-      <h1>Welcome to Pais!</h1>
       {teams && teams.length > 0 ? (
-        teams.map((team: Team) => (
-          <li key={team.id}>
-            {team.id} - {team.name} -{' '}
+        teams.map((team) => (
+          <li key={team.team.id}>
+            {team.team.id} - {team.team.name} -{' '}
             <Link href='/about'>
-              <img src={team.logo_path}></img>
+              <img src={team.team.logo}></img>
             </Link>
           </li>
         ))

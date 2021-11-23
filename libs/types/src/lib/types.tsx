@@ -6,17 +6,23 @@ export interface UiProps {
 }
 
 export interface Pais{
-  id: string;
+  code: string;
   name: string;
-  image_path: string;
+  flag: string;
 }
 
 export interface Team{
   id: string;
   name: string;
-  logo_path: string;
+  logo: string;
+}
+
+export interface Teams{
+  team: {
+    [key: string]: Team;
+};
 }
 
 export interface TeamList{
-  CountryId: string;
+  countryName: string;
 }

@@ -13,13 +13,13 @@ const StyledTeams = styled.div`
 
 export function Teams(props: TeamsProps) {
   const router = useRouter();
-  const { id } = router.query;
-  console.log("id",id)
+  const { name } = router.query;
+  const pathname = window.location.pathname;
   return (
     <StyledTeams>
       <Ui title="Buenas chavales estos son los teams" showTitle={true} />
       <Link href="/about">About</Link>
-      <TeamsList CountryId={id.toString()}/>
+      <TeamsList countryName={name.toString()}/>
     </StyledTeams>
   );
 }
