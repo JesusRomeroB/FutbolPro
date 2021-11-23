@@ -1,7 +1,6 @@
 import Link from 'next/Link';
 import styled from 'styled-components';
 import { Ui } from '@futbol-pro/ui';
-import Futbol from '../app/futbol/futbol';
 import  Paises  from '../app/pais/pais';
 
 const StyledPage = styled.div`

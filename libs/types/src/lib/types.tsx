@@ -11,3 +11,12 @@ export interface Pais{
   image_path: string;
 }
 
+export interface Team{
+  id: string;
+  name: string;
+  logo_path: string;
+}
+
+export interface TeamList{
+  CountryId: string;
+}
