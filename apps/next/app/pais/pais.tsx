@@ -21,7 +21,7 @@ export function Paises(props: PaisProps) {
         paises.map((pais: Pais) => (
           <li key={pais.id}>
             {pais.id} - {pais.name} -{' '}
-            <Link href='/teams/${pais.id}'>
+            <Link href='/teams/${pais.i}'>
               <img src={pais.image_path}></img>
             </Link>
           </li>
