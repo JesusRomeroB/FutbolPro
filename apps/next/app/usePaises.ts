@@ -12,7 +12,6 @@ export const usePaises = () => {
     })
       .then((res) => res.json())
       .then((response) => {
-        console.log("response",response.response)
         setPaises(response.response);
       })
       .catch((error) => console.log(error));

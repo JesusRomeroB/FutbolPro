@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { UiProps } from '@futbol-pro/types'
 
 const StyledUi = styled.div`
-  color: pink;
 `;
 
 export function Ui(props: UiProps) {

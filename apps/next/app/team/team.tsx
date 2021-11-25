@@ -30,7 +30,7 @@ export function TeamsList(props: TeamList) {
           />
         ))
       ) : (
-        <p>no data</p>
+      <p>no data</p>
       )}
     </ItemsContainer>
   );

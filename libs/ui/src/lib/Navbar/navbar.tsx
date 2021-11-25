@@ -15,18 +15,13 @@ const StyledPage = styled.div`
 `;
 
 export function Navbar() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.styled-components file.
-   */
   return (
     <Nav>
       <NavbarContainer>
         <Link href="/">
           <NavLogo>
             <MdOutlineSportsSoccer />
-            Home
+            FutbolPro
           </NavLogo>
         </Link>
         <Menu>
