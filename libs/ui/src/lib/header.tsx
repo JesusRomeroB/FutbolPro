@@ -13,7 +13,6 @@ export function Header() {
    */
   return (
     <StyledPage>
-      <Navbar/>
       <h1>This is a header</h1>
     </StyledPage>
   );

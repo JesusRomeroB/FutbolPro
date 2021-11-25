@@ -17,7 +17,7 @@ export function Players(props: PlayersProps) {
   const pathname = window.location.pathname;
   return (
     <StyledTeams>
-      <Ui title="Buenas chavales estos son los jugadores" showTitle={true} />
+      <Ui title="Lista de jugadores" showTitle={true} />
       <Link href="/about">About</Link>
       <Player teamId={id.toString()}/>
     </StyledTeams>

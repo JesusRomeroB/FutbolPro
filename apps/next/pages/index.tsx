@@ -2,7 +2,6 @@ import Link from 'next/Link';
 import styled from 'styled-components';
 import { Ui } from '@futbol-pro/ui';
 import  Paises  from '../app/pais/pais';
-import { Nav } from '@futbol-pro/ui';
 
 const StyledPage = styled.div`
   .page {
@@ -17,7 +16,7 @@ export function Index() {
    */
   return (
     <StyledPage>
-      <Ui title="Pais" showTitle={true}/>
+      <Ui title="Lista de paises" showTitle={true}/>
       <Paises/>
     </StyledPage>
   );

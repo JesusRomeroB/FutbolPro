@@ -17,7 +17,7 @@ export function Teams(props: TeamsProps) {
   const pathname = window.location.pathname;
   return (
     <StyledTeams>
-      <Ui title="Buenas chavales estos son los teams" showTitle={true} />
+      <Ui title="Lista de equipos" showTitle={true} />
       <TeamsList countryName={name.toString()}/>
     </StyledTeams>
   );

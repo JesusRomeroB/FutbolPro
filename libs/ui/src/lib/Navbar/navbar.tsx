@@ -1,6 +1,14 @@
 import styled from 'styled-components';
+import { MdOutlineSportsSoccer } from 'react-icons/md';
 import Link from 'next/Link';
-import { Nav, NavbarContainer } from './navElements';
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  Menu,
+  MenuItem,
+  MenuLink,
+} from './navElements';
 const StyledPage = styled.div`
   .page {
   }
@@ -15,9 +23,24 @@ export function Navbar() {
   return (
     <Nav>
       <NavbarContainer>
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+        <Link href="/">
+          <NavLogo>
+            <MdOutlineSportsSoccer />
+            Home
+          </NavLogo>
+        </Link>
+        <Menu>
+          <MenuItem>
+            <Link href="/about">
+              <MenuLink>About</MenuLink>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="/contact">
+              <MenuLink>Contact</MenuLink>
+            </Link>
+          </MenuItem>
+        </Menu>
       </NavbarContainer>
     </Nav>
   );
