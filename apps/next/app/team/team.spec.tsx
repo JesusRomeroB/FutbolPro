@@ -4,7 +4,8 @@ import Team from './team';
 
 describe('Team', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Team />);
+    const countryName = 'Colombia';
+    const { baseElement } = render(<Team countryName={countryName} />);
     expect(baseElement).toBeTruthy();
   });
 });
