@@ -17,7 +17,7 @@ export function Index() {
    */
   return (
     <StyledPage>
-      <Ui title="Buenas chavales esto es una prueba" showTitle={true}/>
+      <Ui title="Pais" showTitle={true}/>
       <Paises/>
     </StyledPage>
   );

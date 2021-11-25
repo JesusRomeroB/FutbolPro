@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTeams } from '../useTeams';
 import { Team, Teams } from '@futbol-pro/types';
 import { TeamList } from '@futbol-pro/types';
+import { TeamCard, ItemsContainer } from '@futbol-pro/ui';
 import Link from 'next/Link';
 
 const APIKey = 'kE8eu5JQfIptrIHjoUk3OXdh2vkkGbku1ZdTjymuSEr63YNDyukaVxK1wkXW';
@@ -17,20 +18,21 @@ export function TeamsList(props: TeamList) {
   const { countryName } = props;
   const teams: any[] = useTeams(countryName);
   return (
-    <StyledPais>
+    <ItemsContainer>
       {teams && teams.length > 0 ? (
         teams.map((team) => (
-          <li key={team.team.id}>
-            {team.team.id} - {team.team.name} -{' '}
-            <Link href={`/teams/${countryName}/players/${team.team.id}`}>
-              <img src={team.team.logo}></img>
-            </Link>
-          </li>
+          <TeamCard
+            key={team.team.id}
+            id={team.team.id}
+            name={team.team.name}
+            logo={team.team.logo}
+            countryName={countryName}
+          />
         ))
       ) : (
         <p>no data</p>
       )}
-    </StyledPais>
+    </ItemsContainer>
   );
 }
 

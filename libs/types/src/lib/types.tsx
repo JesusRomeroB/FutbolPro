@@ -5,6 +5,11 @@ export interface UiProps {
   showTitle?: boolean;
 }
 
+export interface CardProps {
+  title: string;
+  code: string;
+}
+
 export interface Pais{
   code: string;
   name: string;
@@ -15,6 +20,7 @@ export interface Team{
   id: string;
   name: string;
   logo: string;
+  countryName?: string;
 }
 
 export interface Player{

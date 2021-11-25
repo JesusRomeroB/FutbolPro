@@ -1,33 +1,33 @@
 import styled from 'styled-components';
 import { usePaises } from '../usePaises';
 import { Pais } from '@futbol-pro/types';
+import { PaisCard, ItemsContainer } from '@futbol-pro/ui';
 import Link from 'next/Link';
 /* eslint-disable-next-line */
 export interface PaisProps {}
 
 const StyledPais = styled.div`
-  color: pink;
+  color: black;
 `;
 
 export function Paises(props: PaisProps) {
   const paises: any[] = usePaises();
 
   return (
-    <StyledPais>
-      <h1>Welcome to Pais!</h1>
+    <ItemsContainer>
       {paises && paises.length > 0 ? (
         paises.map((pais: Pais) => (
-          <li key={pais.code}>
-            {pais.code} - {pais.name} -{' '}
-            <Link href={`/teams/${pais.name}`}>
-              <img src={pais.flag}></img>
-            </Link>
-          </li>
+          <PaisCard
+            key={pais.code}
+            code={pais.code}
+            name={pais.name}
+            flag={pais.flag}
+          />
         ))
       ) : (
         <p>no data</p>
       )}
-    </StyledPais>
+    </ItemsContainer>
   );
 }
 

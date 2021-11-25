@@ -13,7 +13,6 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <div className="app">
         <main>
           <Header/>
-          <Nav/>
           <Component {...pageProps} />
         </main>
       </div>
