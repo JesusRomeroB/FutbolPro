@@ -1,21 +1,15 @@
 import styled from 'styled-components';
-
+import { AboutUi } from '@futbol-pro/ui';
 const StyledPage = styled.div`
   .page {
   }
 `;
 
 export function About() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.styled-components file.
-   */
-  return (
-    <StyledPage>
-      <h1>Buenas chavales estamos en about</h1>
-    </StyledPage>
-  );
+  const title = 'About';
+  const content =
+    'Somos el proveedor de información acerca de los equipos de fútbol número uno en el mundo. Con información acerca de cada equipo de cada país del mundo';
+  return <AboutUi title={title} content={content} />;
 }
 
 export default About;

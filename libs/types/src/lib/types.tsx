@@ -5,6 +5,19 @@ export interface UiProps {
   showTitle?: boolean;
 }
 
+
+export interface AboutUiProps {
+  title: string;
+  content: string;
+}
+
+export interface ContactUiProps {
+  title: string;
+  email: string;
+  telefono: string;
+  pbx: string;
+}
+
 export interface CardProps {
   title: string;
   code: string;

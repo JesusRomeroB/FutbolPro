@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Link from 'next/Link';
 
 export const Nav = styled.div`
   font-size: 18px;

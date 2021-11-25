@@ -1,21 +1,17 @@
 import styled from 'styled-components';
-
+import { ContactUi} from '@futbol-pro/ui'
 const StyledPage = styled.div`
   .page {
   }
 `;
 
-export function Contact() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.styled-components file.
-   */
-  return (
-    <StyledPage>
-      <h1>Buenas chavales estamos en contact</h1>
-    </StyledPage>
-  );
+export function About() {
+  const title = 'Contact';
+  const email =
+    'E-mail: futbolpro@gmail.com';
+  const telefono = 'Teléfono: 3XX XX XX';
+  const pbx = 'PBX: XXX-XXX-XXXX';
+  return <ContactUi title={title} email={email} telefono={telefono} pbx={pbx} />;
 }
 
-export default Contact;
+export default About;
