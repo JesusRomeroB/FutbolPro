@@ -15,5 +15,6 @@ module.exports = {
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  moduleDirectories: ["node_modules", "src"],
   coverageDirectory: '../../coverage/apps/next',
 };
