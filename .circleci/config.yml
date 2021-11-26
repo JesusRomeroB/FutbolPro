@@ -4,13 +4,13 @@ orbs:
 jobs:
   test:
     docker:
-      - image: 'circleci/node:17.1-browsers'
+      - image: 'circleci/node:14.18.1-browsers'
     steps:
       - checkout
       - run: npm install && npx nx test
   build:
     docker:
-      - image: 'circleci/node:17.1-browsers'
+      - image: 'circleci/node:14.18.1-browsers'
     steps:
       - checkout
       - run: npm install && npx nx build
