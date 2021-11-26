@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { usePaises } from '../usePaises';
 import { Pais } from '@futbol-pro/types';
+import {useState, useEffect} from 'react';
 import { PaisCard, ItemsContainer } from '@futbol-pro/ui';
 import Link from 'next/Link';
 /* eslint-disable-next-line */
@@ -10,7 +11,8 @@ const StyledPais = styled.div`
   color: black;
 `;
 
-export function Paises(props: PaisProps) {
+export function Paises (props: PaisProps)  {
+  
   const paises: any[] = usePaises();
 
   return (

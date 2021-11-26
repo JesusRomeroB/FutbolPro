@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -21,8 +21,10 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "next-env.d.ts"
-, "../../libs/ui/src/lib/Header/header.tsx", "../../libs/ui/src/lib/Navbar/navbar.tsx"  ],
+    "next-env.d.ts",
+    "../../libs/ui/src/lib/Header/header.tsx",
+    "../../libs/ui/src/lib/Navbar/navbar.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

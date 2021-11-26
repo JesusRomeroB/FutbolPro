@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Nav = styled.div`
+export const Nav = styled.nav`
   font-size: 18px;
   top: 0;
   z-index: 999;
