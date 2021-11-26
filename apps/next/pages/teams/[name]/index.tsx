@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import { Ui } from '@futbol-pro/ui';
-import Link from 'next/Link';
+import Link from 'next/link';
 import  TeamsList  from '../../../app/team/team';
 import { useEffect, useState } from 'react';
 

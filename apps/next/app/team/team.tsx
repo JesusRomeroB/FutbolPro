@@ -4,7 +4,7 @@ import { useTeams } from '../useTeams';
 import { Team, Teams } from '@futbol-pro/types';
 import { TeamList } from '@futbol-pro/types';
 import { TeamCard, ItemsContainer } from '@futbol-pro/ui';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 const APIKey = 'kE8eu5JQfIptrIHjoUk3OXdh2vkkGbku1ZdTjymuSEr63YNDyukaVxK1wkXW';
 /* eslint-disable-next-line */

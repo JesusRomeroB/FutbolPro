@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import styled from 'styled-components';
 import { Ui } from '@futbol-pro/ui';
 import  Paises  from '../app/pais/pais';
