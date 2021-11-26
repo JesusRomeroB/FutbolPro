@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import { Team } from '@futbol-pro/types';
 import { CardContainer, Image, TextWrapper } from '../cardElements';
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import { Ui } from '@futbol-pro/ui';
-import Link from 'next/Link';
+import Link from 'next/link';
 import Player from '../../../../../app/futbol/futbol';
 
 /* eslint-disable-next-line */

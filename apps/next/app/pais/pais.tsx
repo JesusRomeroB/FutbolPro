@@ -3,7 +3,7 @@ import { usePaises } from '../usePaises';
 import { Pais } from '@futbol-pro/types';
 import {useState, useEffect} from 'react';
 import { PaisCard, ItemsContainer } from '@futbol-pro/ui';
-import Link from 'next/Link';
+import Link from 'next/link';
 /* eslint-disable-next-line */
 export interface PaisProps {}
 

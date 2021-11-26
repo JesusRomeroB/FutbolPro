@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { MdOutlineSportsSoccer } from 'react-icons/md';
-import Link from 'next/Link';
+import Link from 'next/link';
 import {
   Nav,
   NavbarContainer,
